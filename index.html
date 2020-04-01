@@ -8,8 +8,7 @@
 		<h1><center> Applied Technology Degree Maps </center></h1>
 		<h2><center> Designed by: Brittany Soares </center></h2>
 		<h3> Please select your major from the dropdown below: </h3>
-			<select id = "majors" onchange= "majorSelection">
-				<option disabled selected value> -- select an option -- </option>
+			<select id = "majors" onchange= "majorSelection()">
                			<option value = "Software Development">Software Development</option>
               			<option value = "Information Technology">Information Technology</option>
 				<option value = "Computer Science">Computer Science</option>
@@ -21,6 +20,7 @@
 				<option value = "Fall 2019">Fall 2019</option>
 				<option value = "Fall 2020">Fall 2020</option>
 			</select>
+			
 			<p id="demo"></p>
 			
 			<script>
