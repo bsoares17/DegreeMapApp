@@ -14,16 +14,19 @@
 				<option value = "cs">Computer Science</option>
              		</select>
 		<h3> What is your catalog term on your CAPP? </h3>
-		 	<select id = "cappYear">
+		 	<select id = "cappYear" onchange ="myFunction()">
                			<option value = "f2017">Fall 2017</option>
               		 	<option value = "f2018">Fall 2018</option>
 				<option value = "f2019">Fall 2019</option>
 				<option value = "f2020">Fall 2020</option>
-             		</select>
-		<input type="button" value="Submit" onClick="submit()">
+			</select>
+			<p id="demo"></p>
 			
-			function submit()
+			function myFunction() 
 			{
+   				var x = document.getElementById("mySelect").value;
+    				document.getElementById("demo").innerHTML = "You selected: " + x;
+			}
 			
 
 	</body>
