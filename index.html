@@ -23,16 +23,32 @@
 				<option value = "Fall 2020">Fall 2020</option>
 			</select>
 			
-			<p id="demo"></p>
+			<p id="validation"></p>
 			
 			<script>
 			function validateSelections() 
 			{
    				var x = document.getElementById("cappYear").value;
 				var y = document.getElementById("majors").value;
-    				document.getElementById("demo").innerHTML = "You have selected " + y + " as your major and " + x + " as your CAPP year ";
+    				document.getElementById("validation").innerHTML = "You have selected " + y + " as your major and " + x + " as your CAPP year ";
 			}
 			</script>
+			
+			<p id="selection"></p>
+			
+			<script>
+			function sdF17()
+			{
+				var x = document.getElementById("cappYear").value;
+				var y = document.getElementById("majors").value;
+				var greeting;
+				if(x = Software Development)
+					greeting = "Hello";
+				document.getElementById("demo").innerHTML = greeting;
+			}
+			</script>
+					
+				
 
 	</body>
   
