@@ -14,7 +14,7 @@
 				<option value = "cs">Computer Science</option>
              		</select>
 		<h3> What is your catalog term on your CAPP? </h3>
-		 	<select id = "cappYear" onchange ="myFunction()">
+		 	<select id = "cappYear" onchange ="mySelection()">
                			<option value = "f2017">Fall 2017</option>
               		 	<option value = "f2018">Fall 2018</option>
 				<option value = "f2019">Fall 2019</option>
@@ -24,7 +24,7 @@
 			
 			function myFunction() 
 			{
-   				var x = document.getElementById("mySelect").value;
+   				var x = document.getElementById("cappYear").value;
     				document.getElementById("demo").innerHTML = "You selected: " + x;
 			}
 			
