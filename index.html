@@ -24,7 +24,7 @@
 			</select>
 			
 			<p id="validation"></p>
-			<p id = "courses taken"></p>//not yet used
+			// <p id = "courses taken"></p> //not yet used
 			
 			<script>
 			function validateSelections() 
@@ -35,19 +35,18 @@
 			}
 			</script>	
 			
-			<h3>Which courses have you taken?</h3>
-             				<label for = "DSI"> Data Structures I </label>
-					<input type = "checkbox"</input>
-			<br>
-					<label for = "WSA"> Writing Secure Apps </label>
-					<input type = "checkbox"</input>
-				</select>
+		<h3>Which courses have you taken?</h3>
+			<select id = "coursesTaken" onclick="classesTaken()">
+				Data Structures & Algorithims I: <input type="checkbox" id="DSAI">
+			</select>
 			
+			<p id="text"</p>
+
 			<script>
-				
 			function classesTaken() //not yet used, supposed to list which classes are checked off
 			{
-   				
+   				var checkBox = document.getElementById("coursesTaken").value;
+  				document.getElementById("text").innerHTML = checkBox;
 			}
 			</script>
                  		
