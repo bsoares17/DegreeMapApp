@@ -39,10 +39,10 @@
 			<p id="text" style="display:none">You have taken Data Structures and Algorithims I </p>
 		<br>
 			Data Structures & Algorithims II: <input type="checkbox" id="DSAII"  onclick="classesTaken()">
-			<p id="text" style="display:none">You have taken Data Structures and Algorithims II </p>
+			<p id="text2" style="display:none">You have taken Data Structures and Algorithims II </p>
 		<br>
 			Writing Secure Apps: <input type="checkbox" id="WSA"  onclick="classesTaken()">
-			<p id="text" style="display:none">You have taken Writing Secure Apps </p>
+			<p id="text3" style="display:none">You have taken Writing Secure Apps </p>
 			
 			<script>
 			function classesTaken() 
@@ -51,6 +51,8 @@
 				var checkBox = document.getElementById("DSAII");
 				var checkBox = document.getElementById("WSA");
   				var text = document.getElementById("text");
+				var text = document.getElementById("text2");
+				var text = document.getElementById("text3");
   				if (checkBox.checked == true)
 				{
     				text.style.display = "block";
@@ -59,9 +61,11 @@
 				{
      				text.style.display = "none";
   				}
+				
+				$("input:checkbox:not(:checked)")
 			}
 			</script>
-                 		
+			
              
 
 	</body>
