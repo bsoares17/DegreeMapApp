@@ -6,7 +6,7 @@
 	<body>
 		<body style="background-color: #E6E6FA;">
 		<h1><center> Applied Technology Degree Maps </center></h1>
-		<h2><center> Designed by: Brittany Soares </center></h2>
+		<h2><center> Designed by: Brittanyy Soares </center></h2>
 		<h3> Please select your major from the dropdown below: </h3>
 			<select id = "majors">
 				<option disabled selected value> -- select an option -- </option>
@@ -14,7 +14,7 @@
               			<option value = "Information Technology">Information Technology</option>
 				<option value = "Computer Science">Computer Science</option>
              		</select>
-			<button onclick="check()">Find your Type</button>
+
 		<h3> What is your catalog term on your CAPP? </h3>
 		 	<select id = "cappYear" onchange ="validateSelections()">
 				<option disabled selected value> -- select an option -- </option>
@@ -23,6 +23,7 @@
 				<option value = "Fall 2019">Fall 2019</option>
 				<option value = "Fall 2020">Fall 2020</option>
 			</select>
+			<button onclick="check()">Submit</button>
 			
 			<p id="validation"></p>
 			<!------one function per script!---->
@@ -39,33 +40,15 @@
 			<script>
 			function check()
 			{
-				var s = document.getElementById("majors");
+				var a = document.getElementById("majors");
+				var b = document.getElementById("cappYear");
 
-				if (s.value = "Software Development") 
+				if (a.value = "Software Development" && b.value = "Fall 2017") 
 				{
     					alert("Type1")
 				}
 
 			}	
-				
-				
-				
-				
-			</script>
-			<!----method below not working---->
-			function f2017()
-			{
-				
-				var = cappYear;
-				var = majors;
-				
-				if(cappYear= "Fall 2017" && majors= "Software Development" )
-				{
-					str = "hi";
-					alert(str)
-				}
-				
-			}
 			</script>
 			
 			<h3>What courses have you taken?</h3>
