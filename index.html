@@ -1,89 +1,158 @@
 <!DOCTYPE html>
+
 <html>
+
 	<head>
-		<title> Degree Map Application </title>
+		<title> Degree Mapp Application </title>
+
 	</head>
+
 	<body>
+
 		<body style="background-color: #E6E6FA;">
+
 		<h1><center> Applied Technology Degree Maps </center></h1>
-		<h2><center> Designed by: Brittany Soares </center></h2>
+
+		<h2><center> Designed by: Brittanyy Soares </center></h2>
+
 		<h3> Please select your major from the dropdown below: </h3>
+
 			<select id = "majors">
+
 				<option disabled selected value> -- select an option -- </option>
+
                			<option value = "Software Development">Software Development</option>
+
               			<option value = "Information Technology">Information Technology</option>
+
 				<option value = "Computer Science">Computer Science</option>
+
              		</select>
-			<button onclick="check()">Open Degree Map</button>
 
 		<h3> What is your catalog term on your CAPP? </h3>
-		 	<select id = "cappYear" oncheck = "validateSelections()">
+
+		 	<select id = "cappYear" onchange ="validateSelections()">
+
 				<option disabled selected value> -- select an option -- </option>
+
                			<option value = "Fall 2017">Fall 2017</option>
+
               			<option value = "Fall 2018">Fall 2018</option>
+
 				<option value = "Fall 2019">Fall 2019</option>
+
 				<option value = "Fall 2020">Fall 2020</option>
+
 			</select>
-	<br>
+
 			
-			
-			
-			
-			
-			
-			<p id = "validation"></p>
+
+			<p id="validation"></p>
+
 			<!------one function per script!---->
+
 			<script>
+
 			function validateSelections() 
+
 			{
+
    				var x = document.getElementById("cappYear").value;
+
 				var y = document.getElementById("majors").value;
+
 		
+
     				str = document.getElementById("validation").innerHTML = "You have selected " + y + " as your major and " + x + " as your CAPP year ";
+
 				alert(str)
-			}
-			</script>
-			
-			<script>
-			function check()
-			{
-				var a = document.getElementById("majors");
-				var b = document.getElementById("cappYear");
 
-				if (a.value = "Software Development")
+			}
+
+			</script>
+
+			<script>
+
+			function f2017()
+
+			{
+
+				var = cappYear;
+
+				var = majors;
+
+				
+
+				if(cappYear= "Fall 2017" && majors= "Software Development" )
+
 				{
-    					alert("Type1")
+
+					str = "hi";
+
+					alert(str)
+
 				}
 
-			}	
+			}
+
 			</script>
+
 			
+
 			<h3>What courses have you taken?</h3>
+
 		<div class="container">
+
 			<input type="checkbox" class="checks" value="Data Structures & Algorithims I"> Data Structures and Algorithims I<br>
+
 			<input type="checkbox" class="checks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
+
 			<input type="checkbox" class="checks" value="Writing Secure Apps"> Writing Secure Apps<br>
+
 	<br><br>
+
 			<a href="#" onclick="getValue();return false;">What courses am I missing?</a>
+
 		</div>
+
 			<script>
+
 			function getValue() 
+
 			{
+
 			var checks = document.getElementsByClassName('checks');
+
 			var str = '';
+
 			for ( i = 0; i < 3; i++) 
+
 			{
+
 				if ( checks[i].checked === false ) 
+
 				{
+
 					str += checks[i].value + ", ";
+
 				}
+
 			}
+
 			alert(str);
+
 			}
+
 			</script>
+
 		
+
              
 
+
+
 	</body>
+
   
+
 </html>
