@@ -6,7 +6,7 @@
 	<body>
 		<body style="background-color: #E6E6FA;">
 		<h1><center> Applied Technology Degree Maps </center></h1>
-		<h2><center> Designed by: Brittanyy Soares </center></h2>
+		<h2><center> Designed by: Brittany Soares </center></h2>
 		<h3> Please select your major from the dropdown below: </h3>
 			<select id = "majors">
 				<option disabled selected value> -- select an option -- </option>
@@ -16,7 +16,7 @@
              		</select>
 
 		<h3> What is your catalog term on your CAPP? </h3>
-		 	<select id = "cappYear">
+		 	<select id = "cappYear" oncheck = "validateSelections()">
 				<option disabled selected value> -- select an option -- </option>
                			<option value = "Fall 2017">Fall 2017</option>
               			<option value = "Fall 2018">Fall 2018</option>
@@ -36,7 +36,7 @@
    				var x = document.getElementById("cappYear").value;
 				var y = document.getElementById("majors").value;
 		
-    				str = document.getElementById("validation").innerHTML = "You have selected " + y + " as your major and " + x + " as your CAPP year ";
+    				
 				alert(str)
 			}
 			</script>
@@ -46,7 +46,7 @@
 				var a = document.getElementById("majors");
 				var b = document.getElementById("cappYear");
 
-				if (a.value = "Software Development") && (b.value = "Fall 2017") 
+				if (a.value = "Software Development" && b.value = "Fall 2017")
 				{
     					alert("Type1")
 				}
