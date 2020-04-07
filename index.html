@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Degree Mapp Application </title>
+		<title> Degree Map Application </title>
 	</head>
 	<body>
 		<body style="background-color: #E6E6FA;">
 		<h1><center> Applied Technology Degree Maps </center></h1>
-		<h2><center> Designed by: Brittany Soares </center></h2>
+		<h2><center> Designed by: Brittanyy Soares </center></h2>
 		<h3> Please select your major from the dropdown below: </h3>
 			<select id = "majors">
 				<option disabled selected value> -- select an option -- </option>
@@ -14,6 +14,7 @@
               			<option value = "Information Technology">Information Technology</option>
 				<option value = "Computer Science">Computer Science</option>
              		</select>
+			<button onclick="check()">Find your Type</button>
 		<h3> What is your catalog term on your CAPP? </h3>
 		 	<select id = "cappYear" onchange ="validateSelections()">
 				<option disabled selected value> -- select an option -- </option>
@@ -36,8 +37,26 @@
 			}
 			</script>
 			<script>
+			function check()
+			{
+				var s = document.getElementById('majors');
+				var majors = s.options[s.selectedIndex].value;
+
+				if (majors = Software Development) 
+				{
+    					alert("Type1")
+				}
+
+			}	
+				
+				
+				
+				
+			</script>
+			<!----method below not working---->
 			function f2017()
 			{
+				
 				var = cappYear;
 				var = majors;
 				
@@ -46,6 +65,7 @@
 					str = "hi";
 					alert(str)
 				}
+				
 			}
 			</script>
 			
