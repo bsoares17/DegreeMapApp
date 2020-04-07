@@ -23,9 +23,12 @@
 				<option value = "Fall 2019">Fall 2019</option>
 				<option value = "Fall 2020">Fall 2020</option>
 			</select>
-			<button onclick="check()">Submit</button>
+	<br>
+			
 			
 			<p id="validation"></p>
+			
+			<button onclick="check()">Open Degree Map</button>
 			<!------one function per script!---->
 			<script>
 			function validateSelections() 
@@ -43,7 +46,7 @@
 				var a = document.getElementById("majors");
 				var b = document.getElementById("cappYear");
 
-				if (a.value = "Software Development" && b.value = "Fall 2017") 
+				if (a.value = "Software Development") && (b.value = "Fall 2017") 
 				{
     					alert("Type1")
 				}
