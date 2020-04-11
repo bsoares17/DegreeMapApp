@@ -2,34 +2,24 @@
 
 <html>
 	<head>
-		<title> Degree Map Application </title>
+		<title> Degree Map Application for the Applied Technology Department at Curry College</title>
 	</head>
 	<body>
 		<body style="background-color: #E6E6FA;">
 		<h1><center> Applied Technology Degree Maps </center></h1>
-		<h2><center> Created by: Brittanyy Soares </center></h2>
+		<h2><center> Created by: Brittany Soares </center></h2>
 			
-		<h3> Please select your major from the dropdown below: </h3>
-			<select id = "majors">
+		<h3> Please select your major and CAPP year from the dropdown below: </h3>
+			<select id = "majorsAndCAPP" onChange = "validateSelection()">
 				<option disabled selected value> -- select an option -- </option>
-               			<option value = "Software Development">Software Development</option>
-              			<option value = "Information Technology">Information Technology</option>
-				<option value = "Computer Science">Computer Science</option>
+               			<option value = "Software Development - Fall 19">Software Development</option>
+              			<option value = "Information Technology - Fall 19">Information Technology</option>
              		</select>
-
-		<h3> What is your catalog term on your CAPP? </h3>
-		 	<select id = "cappYear" onchange ="validateSelections()">
-				<option disabled selected value> -- select an option -- </option>
-               			<option value = "Fall 2017">Fall 2017</option>
-              			<option value = "Fall 2018">Fall 2018</option>
-				<option value = "Fall 2019">Fall 2019</option>
-				<option value = "Fall 2020">Fall 2020</option>
-			</select>
 			
 		<br>
 		<br>
 
-			<button onclick="check()">Find your Type</button>
+			<button onclick="check()">Find your Degree Map</button>
 			
 			<p id="validation"></p>
 
@@ -38,11 +28,10 @@
 			<script>
 			function validateSelections() 
 			{
-   				var x = document.getElementById("cappYear").value;
-				var y = document.getElementById("majors").value;
+   				var x = document.getElementById("majorsAndCAPP").value;
 
-    				str = document.getElementById("validation").innerHTML = "You have selected " + y + " as your major and " + x + " as your CAPP year ";
-				alert(str)
+    				str = document.getElementById("validation").innerHTML = "You have selected " + y + " as your major and capp year ";
+			
 			}
 
 			</script>
@@ -50,10 +39,12 @@
 			<script>
 			function check()
 			{
-				var a = document.getElementById("majors");
+				var a = document.getElementById("majorsAndCAPP");
 
-				if(a.value = "Software Development")
+				if(a.value = "Software Development - Fall 19")
 					window.open('https://user-images.githubusercontent.com/43052385/79048744-3717e580-7bed-11ea-8443-dca1280d9651.jpg'); 
+				if(b.value = "Information Technology - Fall 19")
+					window.open('
 			}
 			</script>
 	
