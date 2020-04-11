@@ -10,14 +10,10 @@
 		<h2><center> Created by: Brittany Soares </center></h2>
 			
 		<h3> Please select your major and CAPP year from the dropdown below: </h3>
-			<select id = "SDMajorsAndCAPP" onChange = "validateSelection()">
-				<option disabled selected value> -- select an option -- </option>
-               			<option value = "Software Development - Fall 19">Software Development - Fall 19</option>
-              			
-             		</select>
-			<select id= "ITMajorsAndCAPP">
-				<option value = "Information Technology - Fall 19">Information Technology - Fall 19</option>
-			</select>
+			<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label><br>
 			
 		<br>
 		<br>
@@ -42,9 +38,9 @@
 			<script>
 			function check()
 			{
-				var a = document.getElementById("SDMajorsAndCAPP");
+				var a = document.getElementById("male");
 
-				if(a.value = "Software Development - Fall 19")
+				if(a.value = "male")
 					window.open('https://user-images.githubusercontent.com/43052385/79048744-3717e580-7bed-11ea-8443-dca1280d9651.jpg'); 
 			}
 			</script>
