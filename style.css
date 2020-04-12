@@ -2,6 +2,9 @@ img {
 width: 200px; 
 height: 100px; 
 }
+body {
+  font-family: 'Lora', serif;
+}
 h3 {
   color: white;
 }
