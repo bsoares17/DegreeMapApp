@@ -1,72 +1,147 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
+
+
 
 <html>
+
 	<head>
+
 		<title> AT Degree Map Application</title>
+
 		<link rel="stylesheet" type="text/css" href="style.css">
+
 		<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+
 	</head>
+
 	<body>
+
 		<body style="background-color: #E6E6FA;">
-		<button onclick="window.location.href = 'https://www.curry.edu/academics/undergraduate-degrees-and-programs/applied-technology-degrees-and-programs'>Learn more about the AT department</button>
-				 <br>
+
+		<button onclick="window.location.href = 'https://www.curry.edu/academics/undergraduate-degrees-and-programs/applied-technology-degrees-and-programs';">Learn more about the AT department</button>
+
+		<br>
+
 		<h4>Created by: Brittany Soares</h4>
-				 <br>
+
+			<br>
+
 			<h1><center> Curry College Applied Technology Degree Maps </center></h1>
+
 			<center><img src="https://user-images.githubusercontent.com/43052385/79050896-fcb54500-7bfa-11ea-9ac6-9cece9526dc5.png" alt="CC"></center>
 
-		<h3> Please select your major and CAPP year below: </h3>
-			<input type="radio" id="SD20" name="selection" value="SD20">
-				<label for="SD">Software Development - Fall 2020</label><br>
-			<input type="radio" id="IT20" name="selection2" value="IT20">
-				<label for="IT">Information Technology - Fall 2020</label><br>
-			
-		<br>
 		<br>
 
-			<button onclick="check()">Find your Degree Map</button>
+		
+
 			
+
+		<h3> Please select your major and CAPP year below: </h3>
+
+			<input type="radio" id="SD20" name="selection" value="SD20">
+
+				<label for="SD">Software Development - Fall 2020</label><br>
+
+			<input type="radio" id="IT20" name="selection2" value="IT20">
+
+				<label for="IT">Information Technology - Fall 2020</label><br>
+
+			
+
+		<br>
+
+		<br>
+
+
+
+			<button onclick="check()">Find your Degree Map</button>
+
+			
+
 			<p id="validation"></p>
+
+
 
 			<!------one function per script!---->
 
+
+
 			<script>
+
 			function check()
+
 			{
+
 				var a = document.getElementById("SD20");
 
+
+
 				if(a.checked == true)
+
 					window.open('https://github.com/bsoares17/DegreeMapApp/files/4466674/SD20.21.pdf');
+
 				else
+
 					window.open('https://github.com/bsoares17/DegreeMapApp/files/4466669/IT20.21.pdf');
+
 			}
+
 			</script>
+
 	
+
 			<h3>What courses have you taken?</h3>
+
 		<div class="container">
+
 			<input type="checkbox" class="checks" value="Data Structures & Algorithims I"> Data Structures and Algorithims I<br>
+
 			<input type="checkbox" class="checks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
+
 			<input type="checkbox" class="checks" value="Writing Secure Apps"> Writing Secure Apps<br>
+
 	<br><br>
+
 			<a href="#" onclick="getValue();return false;">What courses am I missing?</a>
+
 		</div>
 
+
+
 			<script>
+
 			function getValue() 
+
 			{
+
 				var checks = document.getElementsByClassName('checks');
+
 				var str = '';
 
+
+
 				for ( i = 0; i < 3; i++) 
+
 				{
+
 					if ( checks[i].checked === false ) 
+
 					{
+
 						str += checks[i].value + ", ";
+
 					}
+
 				}
+
 				alert(str);
 
+
+
 			}
+
 			</script>
+
 		</body>
+
 </html>
