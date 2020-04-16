@@ -35,7 +35,7 @@
 
 			<h1><center> Curry College Applied Technology Degree Maps </center></h1>
 
-			<center><img src="https://user-images.githubusercontent.com/43052385/79050896-fcb54500-7bfa-11ea-9ac6-9cece9526dc5.png" alt="CC"></center>
+			<center><img src="https://user-images.githubusercontent.com/43052385/79486102-3499ff00-7fe4-11ea-92e2-c3b1a197b3ee.JPG></center>
 
 		<br>
 
@@ -43,7 +43,7 @@
 
 			
 		
-		<h3> Please select your major and CAPP year below: </h3>
+		<h3> Please select your major and catelog year below: </h3>
 
 			<input type="checkbox" id="SD20" name="selection" value="SD20">
 
@@ -94,18 +94,19 @@
 	
 
 			<h3>What courses have you taken?</h3>
+				<h4>Pre-Requisites
 
 		<div class="container">
 
-			<input type="checkbox" class="checks" value="Data Structures & Algorithims I"> Data Structures and Algorithims I<br>
+			<input type="checkbox" class="preqchecks" value="Current Topics in IT"> Current Topics in IT <br>
 
-			<input type="checkbox" class="checks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
+			<input type="checkbox" class="preqchecks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
 
-			<input type="checkbox" class="checks" value="Writing Secure Apps"> Writing Secure Apps<br>
+			<input type="checkbox" class="preqchecks" value="Writing Secure Apps"> Writing Secure Apps<br>
 
 	<br><br>
 
-			<a href="#" onclick="getValue();return false;">What courses am I missing?</a>
+			<a href="#" onclick="getValuePReq();return false;">What Pre-Req courses am I missing?</a>
 
 		</div>
 
@@ -113,11 +114,11 @@
 
 			<script>
 
-			function getValue() 
+			function getValuePReq() 
 
 			{
 
-				var checks = document.getElementsByClassName('checks');
+				var checks = document.getElementsByClassName('preqchecks');
 
 				var str = '';
 
@@ -144,7 +145,56 @@
 			}
 
 			</script>
+				
+								<h4>Requisites
 
+		<div class="container">
+
+			<input type="checkbox" class="reqchecks" value="Data Structures & Algorithims I"> Data Structures and Algorithims I<br>
+
+			<input type="checkbox" class="reqchecks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
+
+			<input type="checkbox" class="reqchecks" value="Writing Secure Apps"> Writing Secure Apps<br>
+
+	<br><br>
+
+			<a href="#" onclick="getValueReq();return false;">What Req courses am I missing?</a>
+
+		</div>
+
+				<script>
+
+			function getValueReq() 
+
+			{
+
+				var checks = document.getElementsByClassName('reqchecks');
+
+				var str = '';
+
+
+
+				for ( i = 0; i < 3; i++) 
+
+				{
+
+					if ( checks[i].checked === false ) 
+
+					{
+
+						str += checks[i].value + ", ";
+
+					}
+
+				}
+
+				alert(str);
+
+
+
+			}
+
+			</script>
 
 		</body>
 
