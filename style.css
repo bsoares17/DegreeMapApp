@@ -1,10 +1,11 @@
 img { 
-height: 200px;
-width: 400px; 
+  height: 200px;
+  width: 400px; 
 }
+
 body {
-font-family: 'Lora', serif;
-margin: 35px;
+  font-family: 'Lora', serif;
+  margin: 35px;
 }
 
 ul {
