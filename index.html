@@ -92,17 +92,17 @@
 	
 
 			<h3>What courses have you taken?</h3>
-				<h4>Pre-Requisites</h4>
+				<h4>Pre-Requisites for IT and SD</h4>
 				<br>
 	
 
 		<div class="container">
 
-			<input type="checkbox" class="preqchecks" value="Current Topics in IT"> Current Topics in IT <br>
+			<input type="checkbox" class="preqchecks" value="IT 1010 - Introduction to Information Technology">IT 1010 - Introduction to Information Technology</br> <br>
 
-			<input type="checkbox" class="preqchecks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
+			<input type="checkbox" class="preqchecks" value="IT 1100 - Foundations of Hardware">IT 1100 - Foundations of Hardware<br>
 
-			<input type="checkbox" class="preqchecks" value="Writing Secure Apps"> Writing Secure Apps<br>
+			<input type="checkbox" class="preqchecks" value="IT 2100 - Programming Logic>IT 2100 - Programming Logic<br>
 
 	<br><br>
 
@@ -147,21 +147,43 @@
 
 			</script>
 				
-				<h4>Requisites</h4>
+				<h4>SD Major Requirements</h4>
 				<br>
 		
 
 		<div class="container">
 
-			<input type="checkbox" class="reqchecks" value="Data Structures & Algorithims I"> Data Structures and Algorithims I<br>
+			<input type="checkbox" class="reqchecks" value="IT 2210 - Networking">IT 2210 - Networking<br>
 
-			<input type="checkbox" class="reqchecks" value="Data Structures & Algorithims II"> Data Structures & Algorithims II<br>
+			<input type="checkbox" class="reqchecks" value="IT 2300 - Operating Systems"> IT 2300 - Operating Systems<br>
 
-			<input type="checkbox" class="reqchecks" value="Writing Secure Apps"> Writing Secure Apps<br>
+			<input type="checkbox" class="reqchecks" value="IT 3450 - Internship and Seminar">IT 3450 - Internship and Seminar<br>
+			
+			<input type="checkbox" class="reqchecks" value="IT 3500 - Object Oriented Programming">IT 3500 - Object Oriented Programming<br>
+													 
+			<input type="checkbox" class="reqchecks" value="IT 3550 - Data Structures and Algorithms I">IT 3550 - Data Structures and Algorithms I<br>
+													 
+			<input type="checkbox" class="reqchecks" value="IT 3560 - Data Structures and Algorithms II">IT 3560 - Data Structures and Algorithms II<br>
+													 
+			<input type="checkbox" class="reqchecks" value="IT 3570 - Software Engineering">IT 3570 - Software Engineering<br>
+				
+			<input type="checkbox" class="reqchecks" value="IT 3720 - Modern Application Development">IT 3720 - Modern Application Development<br>
+												      
+			<input type="checkbox" class="reqchecks" value="IT 3730 - Writing Secure Applications">IT 3730 - Writing Secure Applications<br>
+												       
+			<input type="checkbox" class="reqchecks" value="IT 3740 - Cloud Computing">IT 3740 - Cloud Computing<br>
+												       
+			<input type="checkbox" class="reqchecks" value="IT 3750 - User Experience Design">IT 3750 - User Experience Design<br>
+												       
+			<input type="checkbox" class="reqchecks" value="IT 3805 - Technology Seminar">IT 3805 - Technology Seminar<br>
+												     
+			<input type="checkbox" class="reqchecks" value="IT 3900 - Senior Seminar: This is IT!">IT 3900 - Senior Seminar: This is IT!<br>
+												   
+													 
 
 	<br><br>
 
-			<a href="#" onclick="getValueReq();return false;">What Req courses am I missing?</a>
+			<a href="#" onclick="getValueReq();return false;">What major requirements courses am I missing for my SD major?</a>
 
 		</div>
 
@@ -198,6 +220,63 @@
 			}
 
 			</script>
+									     
+			
+									     
+			<h4>Related Requirements for SD and IT</h4>
+				<br>
+	
+
+		<div class="container">
+
+			<input type="checkbox" class="reqMchecks" value="AC 1030 - Communication Technology">AC 1030 - Communication Technology</br> <br>
+
+			<input type="checkbox" class="reqMchecks" value="AC 2020 - Database Concepts">AC 2020 - Database Concepts<br>
+
+			<input type="checkbox" class="reqMchecks" value="AC 2768 - HTML and Design">AC 2768 - HTML and Design<br>
+			
+			<input type="checkbox" class="reqMchecks" value="EXP 2350 - Internship Preparation">EXP 2350 - Internship Preparation<br>
+
+	<br><br>
+
+			<a href="#" onclick="getValueMReq();return false;">What related requirement courses am I missing?</a>
+
+		</div>
+	
+	<script>
+
+			function getValueMReq() 
+
+			{
+
+				var checks = document.getElementsByClassName('reqMchecks');
+
+				var str = '';
+
+
+
+				for ( i = 0; i < 3; i++) 
+
+				{
+
+					if ( checks[i].checked === false ) 
+
+					{
+
+						str += checks[i].value + ", ";
+
+					}
+
+				}
+
+				alert(str);
+
+
+
+			}
+
+			</script>
+		<br>
 		
 		<div class="tooltip">Hover over me
   			<span class="tooltiptext">Tooltip text</span>
