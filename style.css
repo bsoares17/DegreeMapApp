@@ -3,7 +3,8 @@ height: 200px;
 width: 400px; 
 }
 body {
-  font-family: 'Lora', serif;
+font-family: 'Lora', serif;
+margin: 35px;
 }
 
 ul {
