@@ -222,6 +222,74 @@
 
 			</script>
 									     
+			<h4>SD Major Requirements</h4>
+				<br>
+		
+
+		<div class="container">
+
+			<input type="checkbox" class="reqITchecks" value="IT 2210 - Networking">IT 2210 - Networking<br>
+
+			<input type="checkbox" class="reqITchecks" value="IT 2215 - Information Technology Security"> IT 2215 - Information Technology Security<br>
+
+			<input type="checkbox" class="reqITchecks" value="IT 2300 - Operating Systems">IT 2300 - Operating Systems<br>
+			
+			<input type="checkbox" class="reqITchecks" value="IT 3100 - Project Management">IT 3100 - Project Management<br>
+													 
+			<input type="checkbox" class="reqITchecks" value="IT 3450 - Internship and Seminar">IT 3450 - Internship and Seminar<br>
+													 
+			<input type="checkbox" class="reqITchecks" value="IT 3500 - Object Oriented Programming">IT 3500 - Object Oriented Programming<br>
+													 
+			<input type="checkbox" class="reqITchecks" value="IT 3800 - Current Topics in Information Technology">IT 3800 - Current Topics in Information Technology<br>
+				
+			<input type="checkbox" class="reqITchecks" value="IT 3805 - Technology Seminar">IT 3805 - Technology Seminar<br>
+												      
+			<input type="checkbox" class="reqITchecks" value="IT 3900 - Senior Seminar: This is IT!">IT 3900 - Senior Seminar: This is IT!<br>
+												       
+			<input type="checkbox" class="reqITchecks" value="IT ___ - Two Electives (2000 - 3000 level)">IT ___ - Two Electives (2000 - 3000 level)<br>
+												       		   
+													 
+
+	<br><br>
+
+			<a href="#" onclick="getValueITReq();return false;">What major requirements courses am I missing for my IT major?</a>
+
+		</div>
+
+				<script>
+
+			function getValueITReq() 
+
+			{
+
+				var checks = document.getElementsByClassName('reqITchecks');
+
+				var str = '';
+
+
+
+				for ( i = 0; i < 13; i++) 
+
+				{
+
+					if ( checks[i].checked === false ) 
+
+					{
+
+						str += checks[i].value + ", ";
+
+					}
+
+				}
+
+				alert(str);
+
+
+
+			}
+
+			</script>
+									     
 			
 									     
 			<h4>Related Requirements for SD and IT</h4>
