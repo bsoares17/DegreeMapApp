@@ -98,16 +98,15 @@
 
 		<div class="container">
 
-			<input type="checkbox" class="preqchecks" value="IT 1010 - Introduction to Information Technology">IT 1010 - Introduction to Information Technology<br>
+			<input type="checkbox" class="preqchecks" value="IT 1010 - Introduction to Information Technology">IT 1010 - Introduction to Information Technology</br> <br>
 
 			<input type="checkbox" class="preqchecks" value="IT 1100 - Foundations of Hardware">IT 1100 - Foundations of Hardware<br>
 
-			<input type="checkbox" class="preqchecks" value="IT 2100 - Programming Logic">IT 2100 - Programming Logic<br>
+			<input type="checkbox" class="preqchecks" value="IT 2100 - Programming Logic>IT 2100 - Programming Logic<br>
 
-			<input type="checkbox" class="preqchecks" value="IT 2789 - Structured Programming">IT 2789 - Structured Programming<br>
 	<br><br>
 
-			<a href="#" onclick="getValuePReq();return false;">What pre requisite courses am I missing?</a>
+			<a href="#" onclick="getValuePReq();return false;">What Pre-Req courses am I missing?</a>
 
 		</div>
 		<br>
@@ -126,7 +125,7 @@
 
 
 
-				for ( i = 0; i < 4; i++) 
+				for ( i = 0; i < 3; i++) 
 
 				{
 
@@ -134,7 +133,7 @@
 
 					{
 
-						str += checks[i].value + ", ";
+						str += checks[i].value + <br>;
 
 					}
 
@@ -200,75 +199,7 @@
 
 
 
-				for ( i = 0; i < 13; i++) 
-
-				{
-
-					if ( checks[i].checked === false ) 
-
-					{
-
-						str += checks[i].value + ", ";
-
-					}
-
-				}
-
-				alert(str);
-
-
-
-			}
-
-			</script>
-									     
-			<h4>IT Major Requirements</h4>
-				<br>
-		
-
-		<div class="container">
-
-			<input type="checkbox" class="reqITchecks" value="IT 2210 - Networking">IT 2210 - Networking<br>
-
-			<input type="checkbox" class="reqITchecks" value="IT 2215 - Information Technology Security"> IT 2215 - Information Technology Security<br>
-
-			<input type="checkbox" class="reqITchecks" value="IT 2300 - Operating Systems">IT 2300 - Operating Systems<br>
-			
-			<input type="checkbox" class="reqITchecks" value="IT 3100 - Project Management">IT 3100 - Project Management<br>
-													 
-			<input type="checkbox" class="reqITchecks" value="IT 3450 - Internship and Seminar">IT 3450 - Internship and Seminar<br>
-													 
-			<input type="checkbox" class="reqITchecks" value="IT 3500 - Object Oriented Programming">IT 3500 - Object Oriented Programming<br>
-													 
-			<input type="checkbox" class="reqITchecks" value="IT 3800 - Current Topics in Information Technology">IT 3800 - Current Topics in Information Technology<br>
-				
-			<input type="checkbox" class="reqITchecks" value="IT 3805 - Technology Seminar">IT 3805 - Technology Seminar<br>
-												      
-			<input type="checkbox" class="reqITchecks" value="IT 3900 - Senior Seminar: This is IT!">IT 3900 - Senior Seminar: This is IT!<br>
-												       
-			<input type="checkbox" class="reqITchecks" value="IT ___ - Two Electives (2000 - 3000 level)">IT ___ - Two Electives (2000 - 3000 level)<br>
-												       		   
-													 
-
-	<br><br>
-
-			<a href="#" onclick="getValueITReq();return false;">What major requirements courses am I missing for my IT major?</a>
-
-		</div>
-
-				<script>
-
-			function getValueITReq() 
-
-			{
-
-				var checks = document.getElementsByClassName('reqITchecks');
-
-				var str = '';
-
-
-
-				for ( i = 0; i < 10; i++) 
+				for ( i = 0; i < 3; i++) 
 
 				{
 
@@ -298,7 +229,7 @@
 
 		<div class="container">
 
-			<input type="checkbox" class="reqMchecks" value="AC 1030 - Communication Technology">AC 1030 - Communication Technology<br>
+			<input type="checkbox" class="reqMchecks" value="AC 1030 - Communication Technology">AC 1030 - Communication Technology</br> <br>
 
 			<input type="checkbox" class="reqMchecks" value="AC 2020 - Database Concepts">AC 2020 - Database Concepts<br>
 
@@ -324,7 +255,7 @@
 
 
 
-				for ( i = 0; i < 4; i++) 
+				for ( i = 0; i < 3; i++) 
 
 				{
 
@@ -332,7 +263,7 @@
 
 					{
 
-						str += checks[i].value + " , ";
+						str += checks[i].value + ", ";
 
 					}
 
