@@ -50,6 +50,12 @@
 			<input type="checkbox" id="IT20" name="selection2" value="IT20">
 
 				<label for="IT">Information Technology - Fall 2020</label><br>
+			<input type="checkbox" id="CS20" name="selection3" value="CS20">
+
+				<label for="CS">Computer Science- Fall 2020</label><br>
+		
+
+		
 
 			
 
@@ -74,17 +80,23 @@
 			{
 
 				var a = document.getElementById("SD20");
-
+				var b = document.getElementById("IT20");
+				var c = document.getElementById("CS20");
 
 
 				if(a.checked == true)
 
 					window.open('https://github.com/bsoares17/DegreeMapApp/files/4466674/SD20.21.pdf');
 
-				else
+				if(b.checked == true)
 
 					window.open('https://github.com/bsoares17/DegreeMapApp/files/4466669/IT20.21.pdf');
-
+				if(c.checked == true)
+					
+					window.open('https://github.com/bsoares17/DegreeMapApp/files/4499139/CS20.21.pdf');
+				else
+					str += "you did not select anything";
+					alert(str)
 			}
 
 			</script>
