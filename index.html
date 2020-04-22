@@ -234,7 +234,8 @@
 			}
 
 			</script>
-									     
+					
+		
 			<h4>IT Major Requirements</h4>
 				<br>
 		
@@ -302,10 +303,8 @@
 			}
 
 			</script>
-									     
 			
-									     
-			<h4>Related Requirements for SD and IT</h4>
+		<h4>Related Requirements for SD and IT</h4>
 				<br>
 	
 
@@ -359,10 +358,200 @@
 
 			</script>
 		
+		<h4>Pre Requisites for CS</h4>
+				<br>
+	
+
+		<div class="container">
+
+			<input type="checkbox" class="preqCchecks" value="IT 1XXX - Intro to Computer Science">IT 1XXX - Intro to Computer Science<br>
+
+			<input type="checkbox" class="preqCchecks" value="IT 1010 - Computer Architecture and Organization">IT 1010 - Computer Architecture and Organization<br>
+
+			<input type="checkbox" class="preqCchecks" value="IT 2789 - Programming and Problem Solving">IT 2789 - Programming and Problem Solving<br>
+
+	<br><br>
+
+			<a href="#" onclick="getValueCPReq();return false;">What related requirement courses am I missing for CS?</a>
+
+		</div>
+	
+	<script>
+
+			function getValueCPReq() 
+
+			{
+
+				var checks = document.getElementsByClassName('preqCchecks');
+
+				var str = '';
+
+
+
+				for ( i = 0; i < 4; i++) 
+
+				{
+
+					if ( checks[i].checked === false ) 
+
+					{
+
+						str += checks[i].value + "                                                              " ; 
+
+					}
+
+				}
+
+				alert(str);
+
+
+
+			}
+
+			</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<h4>CS Major Requirements</h4>
+				<br>
+		
+
+		<div class="container">
+
+			<input type="checkbox" class="reqCSchecks" value="IT 2210 - Networking">IT 2210 - Networking<br>
+
+			<input type="checkbox" class="reqCSchecks" value="IT 2300 - Operating Systems">IT 2300 - Operating Systems<br>
+						 
+			<input type="checkbox" class="reqCSchecks" value="IT 3500 - Object Oriented Programming">IT 3500 - Object Oriented Programming<br>
+												
+			<input type="checkbox" class="reqCSchecks" value="IT 3550 - Data Structures and Algorithms I">IT 3550 - Data Structures and Algorithms I<br>
+			
+			<input type="checkbox" class="reqCSchecks" value="IT 3560 - Data Structures and Algorithms II">IT 3650 - Data Structures and Algorithms II<br>
+			
+			<input type="checkbox" class="reqCSchecks" value="IT 3570 - Software Engineering">IT 3570 - Software Engineering<br>
+			
+			<input type="checkbox" class="reqCSchecks" value="IT 3750 - User Experience Design">IT 3750 - User Experience Design<br>
+			
+			<input type="checkbox" class="reqCSchecks" value="IT 3XXX - Programming Language Theory and Design">IT 3XXX - Programming Language Theory and Design<br>
+				
+			<input type="checkbox" class="reqCSchecks" value="IT 4XXX - Senior Project I">IT 4XXX - Senior Project I<br>
+												      
+			<input type="checkbox" class="reqCSchecks" value="IT 4XXX - Senior Project II">IT 3900 - Senior Project II<br>
+												       
+			<input type="checkbox" class="reqCSchecks" value="IT ___ - Four Electives">IT ___ - Four Electives<br>
+												       		   
+													 
+
+	<br><br>
+
+			<a href="#" onclick="getValueCSReq();return false;">What major requirements courses am I missing for my CS major?</a>
+
+		</div>
+
+				<script>
+
+			function getValueCSReq() 
+
+			{
+
+				var checks = document.getElementsByClassName('reqCSchecks');
+
+				var str = '';
+
+
+
+				for ( i = 0; i < 10; i++) 
+
+				{
+
+					if ( checks[i].checked === false ) 
+
+					{
+
+						str += checks[i].value + "                                                                         " ; 
+
+					}
+
+				}
+
+				alert(str);
+
+
+
+			}
+
+			</script>
+									     
+			<h4>Related Requirements for CS</h4>
+				<br>
+	
+
+		<div class="container">
+
+			<input type="checkbox" class="rreqCSchecks" value="AC 1030 - Communication Technology">AC 1030 - Communication Technology<br>
+
+			<input type="checkbox" class="rreqCSchecks" value="AC 2020 - Database Concepts">AC 2020 - Database Concepts<br>
+
+			<input type="checkbox" class="rreqCSchecks" value="AC 2768 - HTML and Design">AC 2768 - HTML and Design<br>
+			
+			<input type="checkbox" class="rreqCSchecks" value="MATH 2130 - Calculus I">MATH 2130 - Calculus I<br>
+			
+			<input type="checkbox" class="rreqCSchecks" value="MATH 2140 - Calculus II">MATH 2130 - Calculus II<br>
+			
+			<input type="checkbox" class="rreqCSchecks" value="MATH 2XXX - Discrete Mathematics">MATH 2XXX - Discrete Mathematics<br>
+			
+			<input type="checkbox" class="rreqCSchecks" value="SCI - 12 credits">SCI - 12 credits<br>
+
+	<br><br>
+
+			<a href="#" onclick="getValueCSRReq();return false;">What related requirement courses am I missing for CS?</a>
+
+		</div>
+	
+	<script>
+
+			function getValueCSRReq() 
+
+			{
+
+				var checks = document.getElementsByClassName('rreqCSchecks');
+
+				var str = '';
+
+
+
+				for ( i = 0; i < 4; i++) 
+
+				{
+
+					if ( checks[i].checked === false ) 
+
+					{
+
+						str += checks[i].value + "                                                              " ; 
+
+					}
+
+				}
+
+				alert(str);
+
+
+
+			}
+
+			</script>
+		
 		<h2 id ="suggestion">Leave your comments here!</h2>
-<form action="mailto:bsoares2017@students.curry.edu" method="POST" enctype="multipart/form-data">
+<form action="mailto:mgallant@curry.edu; dgordon@curry.edu" method="POST" enctype="multipart/form-data">
   <label for="comments">What suggestions do you have  for the department?</label><br>
-  <input type="text" id="comments" name="comments" value="Enter your comments here"><br>
+  <input type="text" id="comments" name="comments" size="500" value="Enter your comments here"><br>
   <input type="submit" value="Submit">
 </form> 
 		</body>
