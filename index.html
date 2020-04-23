@@ -120,13 +120,14 @@
 
 			<input type="checkbox" class="preqchecks" value="IT 2789 - Programming and Problem Solving">IT 2789 - Programming and Problem Solving<br>
 	
-			
-		</div>
 		<br><br>
-		
-		<button onclick="getValuePReq()">What pre requisite courses am I missing for SD and IT?</button>
 			
-			<p class="preqchecks"></p>
+
+			<a href="#" onclick="getValuePReq();return false;">What pre requisite courses am I missing for the SD or IT major?</a>
+
+		</div>
+
+		
 		
 		<br>
 		
@@ -138,11 +139,10 @@
 
 			{
 
-				//var checks = document.getElementsByClassName('preqchecks');
+				var checks = document.getElementsByClassName('preqchecks');
 
-				var str = "";
+				var str = '';
 				
-				var i;
 
 
 
@@ -154,12 +154,12 @@
 
 					{
 
-						str += checks[i].value + <br>; 
+						str += checks[i].value + "                                                                       " ;; 
 
 					}
 					
 				}
-				document.getElementByClass("preqchecks");
+				
 				alert(str);
 
 
