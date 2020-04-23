@@ -32,7 +32,7 @@
 		<body style="background-color: #E6E6FA;">
 
 	
-		<p>Created by: Brittanyy Soares</p>
+		<p>Created by: Brittany Soares</p>
 
 
 			<h1><center> Curry College Applied Technology Degree Maps </center></h1>
@@ -121,6 +121,8 @@
 			<input type="checkbox" class="preqchecks" value="IT 2789 - Programming and Problem Solving">IT 2789 - Programming and Problem Solving<br>
 	<br><br>
 			<button onclick="getValuePReq()">What pre requisite courses am I missing for SD and IT?</button>
+			
+			<p class="preqchecks"></p>
 		</div>
 		<br>
 		
@@ -132,9 +134,11 @@
 
 			{
 
-				var checks = document.getElementsByClassName('preqchecks');
+				//var checks = document.getElementsByClassName('preqchecks');
 
-				var str = '';
+				var str = "";
+				
+				var i;
 
 
 
@@ -146,12 +150,12 @@
 
 					{
 
-						alert(checks[i].value + <br>); 
+						str += checks[i].value + <br>; 
 
 					}
-
+					
 				}
-
+				document.getElementByClass("preqchecks");
 				//alert(str);
 
 
